@@ -1,5 +1,5 @@
 # System-Design-ISA
-##ALU VHDL Project
+## ALU VHDL Project
 This project implements an Arithmetic Logic Unit (ALU) in VHDL, comprising three main modules: ADD_SUB, LOGIC, and Shifter. The project also includes the testbench files for each module, verifying their functionality.
 
 ### Project Structure
@@ -18,7 +18,7 @@ Additionally, the project includes testbench files to validate each module:
 - tb_LOGIC.vhd
 - tb_Shifter.vhd
 - tb_top.vhd
-- 
+  
 There are also script files to facilitate waveform and signal list viewing:
 
 - WAVE.DO
