@@ -12,14 +12,14 @@ This project implements an Arithmetic Logic Unit (ALU) in VHDL, comprising three
 - AUX_PACKAGE.VHD
 - TOP.VHD
 
-Additionally, the project includes testbench files to validate each module:
+**Additionally, the project includes testbench files to validate each module:**
 
 - tb_AddSub.vhd
 - tb_LOGIC.vhd
 - tb_Shifter.vhd
 - tb_top.vhd
   
-There are also script files to facilitate waveform and signal list viewing:
+**There are also script files to facilitate waveform and signal list viewing:**
 
 - WAVE.DO
 - LIST.DO
