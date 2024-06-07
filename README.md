@@ -88,14 +88,14 @@ The SHIFTER module can shift left or right by a variable amount specified by X.
 A sub-component used by the SHIFTER module to perform individual shift operations.
 
 **Inputs:**
-**- Y:** Operand (n bits)
-**- Xk:** Specific bit of X for the shift amount
-**- DIR:** Direction of shift (3 bits)
-**- Cin:** Carry in
+- **Y:** Operand (n bits)
+- **Xk:** Specific bit of X for the shift amount
+- **DIR:** Direction of shift (3 bits)
+- **Cin:** Carry in
 
 **Outputs:**
-**- Cout:** Carry out
-**- Output:** Result (n bits)
+- **Cout:** Carry out
+- **Output:** Result (n bits)
 
 
 
@@ -108,12 +108,12 @@ This file contains auxiliary definitions and is included where needed in the oth
 The top-level module integrating the ADD_SUB, LOGIC, and SHIFTER modules.
 
 **Inputs:**
-**- Y_i, X_i:** Operands (n bits)
-**- ALUFN_i:** Operation selector (5 bits)
+- **Y_i, X_i:** Operands (n bits)
+- **ALUFN_i:** Operation selector (5 bits)
 
 **Outputs:**
-**- ALUout_o:** ALU result (n bits)
-**- Nflag_o, Cflag_o, Zflag_o, Vflag_o:** Status flags
+- **ALUout_o:** ALU result (n bits)
+- **Nflag_o, Cflag_o, Zflag_o, Vflag_o:** Status flags
 
 The TOP module uses the most significant bits of ALUFN_i to determine which operation to perform.
 
@@ -147,14 +147,14 @@ Executes a sequence of operations (ADD, SUB, SHIFT LEFT, SHIFT RIGHT, NOT, OR, A
 
 ## How to Run
 
-**- Compile the VHDL files:** Ensure all VHDL files are compiled in your simulation tool.
-**- Load the Testbenches:** Load the appropriate testbench file for the module you want to test.
+- **Compile the VHDL files:** Ensure all VHDL files are compiled in your simulation tool.
+- **Load the Testbenches:** Load the appropriate testbench file for the module you want to test.
 
 ### Run the Simulations:
-**-** Execute the testbenches and observe the waveforms or output logs to verify the functionality of each module.
-**-** Use the WAVE.DO and LIST.DO scripts to set up your waveform and signal list views for better visualization of the simulation results.
-**- WAVE.DO:** Sets up the waveform view in the simulation tool.
-**- LIST.DO:** Sets up the signal list for monitoring in the simulation tool.
+- Execute the testbenches and observe the waveforms or output logs to verify the functionality of each module.
+- Use the WAVE.DO and LIST.DO scripts to set up your waveform and signal list views for better visualization of the simulation results.
+- **WAVE.DO:** Sets up the waveform view in the simulation tool.
+- **LIST.DO:** Sets up the signal list for monitoring in the simulation tool.
 
 
 ## Conclusion
