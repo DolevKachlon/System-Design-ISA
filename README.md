@@ -29,13 +29,14 @@ This module performs addition and subtraction operations.
 It uses the FA (Full Adder) component to implement these operations.
 
 **Inputs:**
-- ***ALUFN:*** Operation selector (3 bits)
-- ***X, Y:*** Operands (n bits)
+- **ALUFN:** Operation selector (3 bits)
+- **X, Y:** Operands (n bits)
   
 **Outputs:**
-- ***Cout:*** Carry out
+- **Cout:** Carry out
 - **Vflag:** Overflow flag
 - **S:** Result (n bits)
+  
 The ADD_SUB module can perform addition, subtraction, and a bitwise NEG (negation) operation on X depending on the ALUFN value.
 
 
@@ -62,6 +63,7 @@ This module performs logical operations.
   
 **Outputs:**
 - **OUTPUT:** Result (n bits)
+  
 The LOGIC module supports operations such as NOT, OR, AND, XOR, NOR, NAND, and XNOR.
 
 
@@ -77,6 +79,7 @@ This module performs bitwise shift operations.
 **Outputs:**
 - **COUT:** Carry out
 - **RES:** Result (n bits)
+  
 The SHIFTER module can shift left or right by a variable amount specified by X.
 
 
@@ -111,6 +114,7 @@ The top-level module integrating the ADD_SUB, LOGIC, and SHIFTER modules.
 **Outputs:**
 **- ALUout_o:** ALU result (n bits)
 **- Nflag_o, Cflag_o, Zflag_o, Vflag_o:** Status flags
+
 The TOP module uses the most significant bits of ALUFN_i to determine which operation to perform.
 
 
