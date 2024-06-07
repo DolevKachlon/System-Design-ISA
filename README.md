@@ -13,14 +13,12 @@ This project implements an Arithmetic Logic Unit (ALU) in VHDL, comprising three
 - TOP.VHD
 
 **Additionally, the project includes testbench files to validate each module:**
-
 - tb_AddSub.vhd
 - tb_LOGIC.vhd
 - tb_Shifter.vhd
 - tb_top.vhd
   
 **There are also script files to facilitate waveform and signal list viewing:**
-
 - WAVE.DO
 - LIST.DO
 
@@ -38,8 +36,9 @@ It uses the FA (Full Adder) component to implement these operations.
 - ***Cout:*** Carry out
 - **Vflag:** Overflow flag
 - **S:** Result (n bits)
-
 The ADD_SUB module can perform addition, subtraction, and a bitwise NEG (negation) operation on X depending on the ALUFN value.
+
+
 
 ### FA Module
 A simple full adder component used by the ADD_SUB module.
@@ -53,6 +52,7 @@ A simple full adder component used by the ADD_SUB module.
 - **cout:** Carry out
 
 
+
 ### LOGIC Module
 This module performs logical operations.
 
@@ -62,8 +62,8 @@ This module performs logical operations.
   
 **Outputs:**
 - **OUTPUT:** Result (n bits)
-  
 The LOGIC module supports operations such as NOT, OR, AND, XOR, NOR, NAND, and XNOR.
+
 
 
 ### SHIFTER Module
@@ -77,8 +77,8 @@ This module performs bitwise shift operations.
 **Outputs:**
 - **COUT:** Carry out
 - **RES:** Result (n bits)
-  
 The SHIFTER module can shift left or right by a variable amount specified by X.
+
 
 
 ### SHIFTERSUB Module
@@ -95,8 +95,10 @@ A sub-component used by the SHIFTER module to perform individual shift operation
 **- Output:** Result (n bits)
 
 
+
 ### AUX_PACKAGE.VHD
 This file contains auxiliary definitions and is included where needed in the other modules.
+
 
 
 ### TOP Module
@@ -109,8 +111,8 @@ The top-level module integrating the ADD_SUB, LOGIC, and SHIFTER modules.
 **Outputs:**
 **- ALUout_o:** ALU result (n bits)
 **- Nflag_o, Cflag_o, Zflag_o, Vflag_o:** Status flags
-
 The TOP module uses the most significant bits of ALUFN_i to determine which operation to perform.
+
 
 
 ## Testbenches
